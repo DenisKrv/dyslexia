@@ -1,0 +1,99 @@
+body {
+  font-family: Overpass, Arial, sans-serif;
+  background-color: #715926;
+  padding: 1em;
+}
+article {
+ position: relative;
+ max-width: 100em;
+}
+main {
+  background: #a38239;
+  max-width: 68em;
+  min-height: 75%;
+  padding: 1.875em 3.25em;
+  color:#ffffff;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.57);
+  line-height: 1.5;
+}
+h2 {
+  background-color: #fff;
+  border: thin grey outset;
+  max-width:75%;
+  padding-left:1em;margin:0;
+  transform: rotate(-0.7deg);
+}
+button{
+	background: rgb(187,86,28);
+	background: linear-gradient(90deg, rgba(187,86,28,1) 0%, rgba(223,100,43,1) 35%, rgba(255,218,0,1) 100%);
+	padding: 20px;
+	color:#ffffff;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.57);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 530;
+	font-size: 17px;
+	margin: 4px 2px;
+	border-radius: 25px;
+}
+
+@media(min-width:700px) {
+  body:not(.dyslexia-mode) main {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: #a38239;
+    width: 80%;
+  }
+  main:before, main:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    max-width: 75em;
+    width: 95%;
+    z-index: -1;
+  }
+}
+
+.dyslexia-mode {
+    letter-spacing: 0.02ch;
+    word-spacing: 0.3ch; /* 3.5x letter-spacing */
+    font-variant-ligatures: none; /* explicitly disable ligatures */
+    font-weight: 550; /* demi-bold */
+    font-size: 115%; /* assuming 16px base size, convert to 18pt */
+}
+
+.dyslexia-mode main {
+   line-height: 1.5;
+}
+
+.dyslexia-mode main p {
+   margin-top: 1.5em;
+}
+
+.dyslexia-mode strong {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.57);
+  
+}
+
+.dyslexia-mode h2 {
+  border: none; border-bottom: thin grey solid;  /* just keeping the bottom border for this element, to retain some separation */
+  max-width: 100%; /* standard width */
+  transform: none; /* do not rotate */
+  background-color: inherit; /* We no longer look like a label, so we don't require our own background */
+  margin-bottom: 1em; padding-left:0; /* some spacing adjustments */
+}
+.dyslexia-mode main li:nth-of-type(odd) {
+    background-color: palegoldenrod;
+}
+#dyslexia-toggle {
+  padding: 1em;
+  font-size: 17pt;
+  letter-spacing: 0.35ch;
+  float:right;
+}
+
+.dyslexia-mode #dyslexia-toggle {
+  background-color: #115c7d;
+  color: #FFFFFF;
+}

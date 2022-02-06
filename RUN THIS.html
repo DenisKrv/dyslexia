@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <title>Dyslexia Friendly Text Document Converter</title>
+    <link rel="stylesheet" type="text/css" href="Code/Styles/style.css">
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <h1><a href="/">Dyslexia Friendly Text Document Converter</a></h1>
+		<button id="dyslexia-toggle" type="button" aria-pressed="false">Dyslexia Mode</button>
+		<style type="text/css">
+			a:link {color:#FFFFFF;}
+			a:visited {color:#dddddd;}
+			a:hover {color:#b972fb;}
+			a:active {color:#9133e8}
+		</style>
+      </div>
+    </div>
+	<main>
+		<div class="container">
+		<input id="document" type="file" />
+		<div class="row">
+			<div class="span8">
+			<div id="output" class="well">
+			</div>
+			</div>
+			<div class="span4">
+			<h3>Dyslexia Friendly Text Document Converter</h3>
+			<div id="messages">
+			</div>
+			</div>
+		</div>
+	</main>
+    <script src="Code/JavaScript/dyslexia_friendly_conversion.js"></script>
+    <script src="Code/JavaScript/project_butter.js"></script>
+    <script src="Code/JavaScript/dyslexia_toggle.js"></script>
+  </body>
+</html>
+
